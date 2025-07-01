@@ -1,12 +1,11 @@
 import {
-  CalendarCheck,
   ClipboardList,
   FileText,
   Phone,
   ScrollText,
-  Users
-} from "lucide-react"
-import { HelpfulLinkCard } from "./HelpfulLinkCard"
+  Users,
+} from "lucide-react";
+import { HelpfulLinkCard } from "./HelpfulLinkCard";
 
 export function SidebarHelpful() {
   const links = [
@@ -14,39 +13,33 @@ export function SidebarHelpful() {
       title: "Бланки заявлений",
       description: "Скачать стандартные формы документов",
       href: "/docs/forms",
-      icon: FileText
+      icon: FileText,
     },
     {
       title: "Телефонный справочник",
       description: "Контакты всех отделов и сотрудников",
       href: "/contacts",
-      icon: Phone
+      icon: Phone,
     },
     {
       title: "Сотрудники",
       description: "Список всех работников школы",
       href: "/staff",
-      icon: Users
-    },
-    {
-      title: "График отпусков",
-      description: "Актуальное расписание отпусков",
-      href: "/vacations",
-      icon: CalendarCheck
+      icon: Users,
     },
     {
       title: "Регламенты и инструкции",
       description: "Внутренние нормативные документы",
       href: "/docs/regulations",
-      icon: ScrollText
+      icon: ScrollText,
     },
     {
       title: "Задачи и поручения",
       description: "Контроль за текущими задачами",
       href: "/tasks",
-      icon: ClipboardList
-    }
-  ]
+      icon: ClipboardList,
+    },
+  ];
 
   return (
     <aside className="border-l h-full overflow-y-auto p-2 space-y-2">
@@ -59,5 +52,5 @@ export function SidebarHelpful() {
         ))}
       </div>
     </aside>
-  )
+  );
 }
